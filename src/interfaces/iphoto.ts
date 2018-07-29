@@ -1,5 +1,4 @@
 import {IApiPhoto} from "./api/iapi-photo";
-import {dateFromGmt} from "../../../community-frontend/src/helpers/general";
 
 export interface IPhoto {
   id: string,
@@ -36,7 +35,7 @@ export const iPhotoFromApi = (data: IApiPhoto): IPhoto => {
         isfamily: data.isfamily,
         photoUrl : 'https://farm' + data.farm + '.staticflickr.com/' + data.server + '/' + data.id + '_' + data.secret + '.jpg'
     };
-    
+
     if(data.description){
         res.description = data.description;
     }
