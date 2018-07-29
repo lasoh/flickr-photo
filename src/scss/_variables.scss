@@ -1,0 +1,27 @@
+// screen size breakpoints
+$screen-xsmall: 600px;
+$screen-small: 960px;
+$screen-medium: 1280px;
+$screen-large: 1920px;
+
+// padding
+$padding-default: 24px;
+$padding-mobile: 24px 16px;
+
+// content
+$max-main-content-width: 1440px;
+
+// nav bar sizing
+$nav-bar-height-tablet: 50px;
+$nav-bar-height-desktop: 80px;
+
+// layers - DO NOT TOUCH !!! May disturb behaviour of Material CDK Overlay.
+$z-index-base: 0;
+$z-index-fab: 50;
+$z-index-overlay: 100;
+$z-index-front: 150;
+
+
+
+
+

@@ -1,0 +1,25 @@
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
+
+* {
+  font-family: Dosis, sans-serif;
+  box-sizing: border-box;
+}
+
+.material-icons {
+  font-family: 'Material Icons' !important;
+}
+
+p {
+  font-family: Merriweather, serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 400;
+}

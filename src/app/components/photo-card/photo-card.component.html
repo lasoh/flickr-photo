@@ -1,0 +1,9 @@
+<div class="photo-card">
+  <div class="photo-card_image" [style.background-image]="photoUrl">
+  </div>
+  <div class="photo-card_overlay">
+    <span class="photo-card title">Title: <strong>{{value.title}}</strong></span>
+    <span class="photo-card date">{{value.dateupload * 1000 | date}}</span>
+    <span class="photo-card author" [routerLink]="['/owner/'+value.owner]" matTooltip="See {{value.ownername}} page">Author: <strong>{{value.ownername}}</strong></span>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<mat-grid-list *ngIf="photos" cols="3" rowHeight="2:1"
+               infiniteScroll
+               [infiniteScrollDistance]="2"
+               [infiniteScrollThrottle]="50"
+               (scrolled)="onScroll()">
+  <mat-grid-tile *ngFor="let photo of photos">
+      <app-photo-card [value]="photo"></app-photo-card>
+  </mat-grid-tile>
+</mat-grid-list>

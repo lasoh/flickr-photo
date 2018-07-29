@@ -1,0 +1,24 @@
+@import "./../../../scss/variables";
+nav {
+  display: flex;
+  height: $nav-bar-height-desktop;
+  width: 100%;
+  background-color: #d7d5ff;
+  align-items: center;
+  padding: 0 10px;
+  z-index: $z-index-overlay;
+  position: fixed;
+}
+.nav-rightside {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+
+.nav-leftside {
+  display: flex;
+  align-self: center;
+  align-items: center;
+}

@@ -1,0 +1,4 @@
+<mat-card *ngIf="ownerData">
+  <mat-card-title>Username: <strong>{{ownerData.username}}</strong> ({{ownerData.photosCount}})</mat-card-title>
+  <app-photos [type]="'owner'"></app-photos>
+</mat-card>
