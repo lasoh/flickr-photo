@@ -10,13 +10,13 @@ export interface IPhoto {
   ispublic: number,
   isfriend: number,
   isfamily: number,
-  photoUrl?: string
-  description? : IDescription
-  dateupload? : string,
-  ownername? : string,
-  url_m? : string,
-  height_m? : string,
-  width_m? : string
+  photoUrl?: string,
+  description?: IDescription,
+  dateupload?: string,
+  ownername?: string,
+  url_m?: string,
+  height_m?: string,
+  width_m?: string
 }
 export interface IDescription {
     _content: string
