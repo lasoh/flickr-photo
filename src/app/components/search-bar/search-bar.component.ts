@@ -12,7 +12,7 @@ import {NotificationsService} from "../../notifications.service";
 export class SearchBarComponent implements OnInit {
   
   searchService: FlickerService;
-  searchString: string = '';
+  searchString: string = 'Dogs';
   router: Router;
   
   constructor(flickerService: FlickerService, public notificationSerice: NotificationsService) {
@@ -20,7 +20,7 @@ export class SearchBarComponent implements OnInit {
   }
   
   public ngOnInit() {
-  
+    this.search();
   }
   
   
