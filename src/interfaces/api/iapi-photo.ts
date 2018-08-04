@@ -9,7 +9,7 @@ export interface IApiPhoto {
   isfriend: number,
   isfamily: number,
   description? : IApiDescription,
-  dateupload? : string,
+  dateupload? : number,
   ownername? : string,
   url_m? : string,
   height_m? : string,

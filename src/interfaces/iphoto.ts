@@ -10,13 +10,13 @@ export interface IPhoto {
   ispublic: number,
   isfriend: number,
   isfamily: number,
-  photoUrl?: string,
-  description?: IDescription,
-  dateupload?: string,
-  ownername?: string,
-  url_m?: string,
-  height_m?: string,
-  width_m?: string
+  photoUrl?: string
+  description? : IDescription
+  dateupload? : number,
+  ownername? : string,
+  url_m? : string,
+  height_m? : string,
+  width_m? : string
 }
 export interface IDescription {
     _content: string
@@ -35,7 +35,7 @@ export const iPhotoFromApi = (data: IApiPhoto): IPhoto => {
         isfamily: data.isfamily,
         photoUrl : 'https://farm' + data.farm + '.staticflickr.com/' + data.server + '/' + data.id + '_' + data.secret + '.jpg'
     };
-
+    
     if(data.description){
         res.description = data.description;
     }
